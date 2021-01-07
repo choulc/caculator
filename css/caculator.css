@@ -1,0 +1,59 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: rgb(2, 105, 74);
+    width: 370px;
+    height: 496px;
+    border-radius: 15px;
+}
+
+#keyBoard {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/default.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#displayTop {
+    background-color: rgb(30, 30, 30);
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px 10px 0 0;
+    height: 30px;
+}
+
+#displayBottom {
+    background-color: rgb(30, 30, 30);
+    margin: 0 5px;
+    border-radius: 0 0 10px 10px;
+    height: 80px;
+}
+
+#displayResult {
+    font-size: xx-large;
+}
+
+td {
+    width: 90px;
+    padding: 10px;
+}
+
+.keyItem {
+    box-shadow: 0px 0px 3px rgb(41, 41, 41);
+    font-size: 20px;
+}
+
+.keyWidth {
+    width: 57px;
+}

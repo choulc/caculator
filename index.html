@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算器</title>
+    <!-- link bootstrap.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/caculator.css">
+</head>
+
+<body onkeydown="keyDown(event)">
+
+    <div class="container mt-5 px-4 border border-dark">
+        <div id="displayTop"
+            class="row mt-4 d-flex align-items-center border-left border-top border-right border-light">
+            <div id="displayPrecedure" class="col-12 text-right text-secondary"></div>
+        </div>
+        <div id="displayBottom"
+            class="row d-flex align-items-center border-left border-right border-bottom border-light mb-3">
+            <div id="displayResult" class="col-12 text-wrap text-right text-white">0</div>
+        </div>
+        <div id="keyBoard">
+            <table class="mx-auto">
+                <tr>
+                    <td id="tdClearAndAllClear">
+                        <div class="keyWidth keyItem col btn btn-light border border-dark" onclick="clickAllClear()">AC
+                        </div>
+                    </td>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-light border border-dark"
+                            onclick="clickPlusAndMinusSign()">+/-
+                        </div>
+                    </td>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-light border border-dark" onclick="clickPercent()">%
+                        </div>
+                    </td>
+                    <td id="tdDiv">
+                        <div class="keyWidth keyItem col btn btn-primary border border-dark"
+                            onclick="clickMultOrDiv('÷')">÷
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickNum(7)">7
+                        </div>
+                    </td>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickNum(8)">8</div>
+                    </td>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickNum(9)">9</div>
+                    </td>
+                    <td id="tdMult">
+                        <div class="keyWidth keyItem col btn btn-primary border border-dark"
+                            onclick="clickMultOrDiv('×')">×
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickNum(4)">4</div>
+                    </td>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickNum(5)">5</div>
+                    </td>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickNum(6)">6</div>
+                    </td>
+                    <td id="tdMinus">
+                        <div id="btnMinus" class="keyWidth keyItem col btn btn-primary border border-dark"
+                            onclick="clickPlusOrMinus('-')">-</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickNum(1)">1
+                        </div>
+                    </td>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickNum(2)">2</div>
+                    </td>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickNum(3)">3</div>
+                    </td>
+                    <td id="tdPlus">
+                        <div id="btnPlus" class="keyWidth keyItem col btn btn-primary border border-dark"
+                            onclick="clickPlusOrMinus('+')">+</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="keyItem col btn btn-dark border border-dark" onclick="clickNum(0)">0</div>
+                    </td>
+                    <td id="tdDot">
+                        <div class="keyWidth keyItem col btn btn-dark border border-dark" onclick="clickDot()">.</div>
+                    </td>
+                    <td>
+                        <div class="keyWidth keyItem col btn btn-primary border border-dark" onclick="clickEqual()">=
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <script src="js/caculator.js"></script>
+    <!-- bootstrap setting -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
